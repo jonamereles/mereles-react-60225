@@ -1,5 +1,5 @@
 import { useState } from "react"
-import './Test.css'
+import '../components/Test.css'
 export const Test = ({ mensaje }) => {
     //Valor - Forma de modificarlo - Valor inicial
     const [numero, setNumero] = useState(0)

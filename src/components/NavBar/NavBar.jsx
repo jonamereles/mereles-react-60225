@@ -4,8 +4,8 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import CartWidget from '../cart/CartWidget';
-import Logo from '../../Logo.jsx';
+import CartWidget from '../Cart/CartWidget';
+import Logo from '../../Logo'
 
 function NavScrollExample() {
     return (
@@ -14,34 +14,31 @@ function NavScrollExample() {
         <Navbar.Brand href="#"> <Logo/> </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-        
             <Nav
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
             navbarScroll
             >
-            <Nav.Link href="#action1">instrumentos</Nav.Link>
-            <Nav.Link href="#action2">accesorios</Nav.Link>
-            <NavDropdown title="cursos" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">cursos</NavDropdown.Item>
+            <Nav.Link href="#action1">Home</Nav.Link>
+            <Nav.Link href="#action2">Cursos</Nav.Link>
+            <Nav.Link href="#action2">Accesorios</Nav.Link>
+            <NavDropdown title="instrumentos" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="#action3">Usados</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">
-                Another action
+                
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action5">
-                Something else here
+                Nuevos
                 </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#action2"> <CartWidget/> </Nav.Link>
-            <Nav.Link href="#" disabled>
-                Link
-            </Nav.Link>
+            <Nav.Link href="#action2"> <CartWidget/></Nav.Link>
+        
             </Nav>
-            
             <Form className="d-flex">
             <Form.Control
                 type="search"
-                placeholder="buscador"
+                placeholder="Buscador"
                 className="me-2"
                 aria-label="Search"
             />
