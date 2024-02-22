@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "title": "Bajo",
+        "brand": "Ibanez-GSR200 BK-",
+        "price": 500,
+        "stock": 12,
+        "img": "1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Bateria",
+        "brand": "Yamaha -Stage Custon Birch-",
+        "price": 1500,
+        "stock": 10,
+        "img": "2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Guitarra",
+        "brand": "Yamaha -APX600-",
+        "price": 1200,
+        "stock": 10,
+        "img": "3.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Teclado",
+        "brand": "sintetizador korg-kross 2 88 teclas-",
+        "price": 2200,
+        "stock": 10,
+        "img": "4.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Condenser",
+        "brand": "Samson CL8a",
+        "price": 350,
+        "stock": 10,
+        "img": "5.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Micrófono",
+        "brand": "Shure SM58",
+        "price": 13,
+        "stock": 320,
+        "img": "6.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Amplificador de Auricular",
+        "brand": "Behringer HA400",
+        "price": 25,
+        "stock": 15,
+        "img": "7.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Cajon Puruano",
+        "brand": "LP",
+        "price": 50,
+        "stock": 10,
+        "img": "8.jpg"
+    },
+    {
+        "id": 9,
+        "title": "trompeta",
+        "brand": "Yamaha YTR2330",
+        "price": 1000,
+        "stock": 10,
+        "img": "9.jpg"
+    },
+    {
+        "id": 10,
+        "title": "consola",
+        "brand": "Phonic HELIXBOARD12U",
+        "price": 500,
+        "stock": 10,
+        "img": "10.jpg"
+    }
+]
