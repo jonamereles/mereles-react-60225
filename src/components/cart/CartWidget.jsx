@@ -7,9 +7,10 @@ import { ImCart } from "react-icons/im";
 export const CartWidget = () => {
     return (
         <div className='container'>
-            <button>
-            <ImCart />
-            </button>
+            <button className="bg-sky-700 text-white px-4 py-2 rounded flex items-center">
+                <ImCart />
+                <span>0</span>
+                </button>
         </div>
     );
 }
