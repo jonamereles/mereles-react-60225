@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom"
 import { useCounter } from ".././hooks/UseCounter"
+import { useCarritoContext } from "../Context/CartContext"
 
 export const ItemDetail = ({ item }) => {
+    const { addItem } = useCarritoContext()
     const { count, increment, decrement, reset } = useCounter(1, item.stock, 1)
 
     const handleAddToCart = () => {
+        addItem(item, count)
         console.log("Producto agregado al carrito")
     }
     return (
@@ -14,7 +17,7 @@ export const ItemDetail = ({ item }) => {
                 <button className="absolute top-4 right-4 text-gray-700 hover:text-gray-900">Cerrar</button>
             </Link>
 
-            <img className="w-full h-64 object-cover mb-6" src={`../img/${item.img}`} alt={`Imagen de ${item.title}`} />
+            <img className="w-full h-64 object-cover mb-6" src={`${item.img}`} alt={`Imagen de ${item.title}`} />
             <div className="text-center">
                 <h2 className="text-2x1 font-bold mb-2">{item.title}</h2>
                 <p className="text-gray-700 mb-2 font-semibold">Marca: {item.size}</p>

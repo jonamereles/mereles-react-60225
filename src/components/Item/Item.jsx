@@ -1,9 +1,10 @@
 import '../Item/Item.css'
-
+import { Link } from "react-router-dom"
 export const Item = ({ product }) => {
     return (
+        <Link to={`/product/${product.id}`}>
         <div className=" max-w-xs mx-auto bg-gray-200 p-3 rounded-md red">
-            <img src={`../data/img/${product.img}`} alt={`Imagen de ${product.title}`} />
+            <img src={`${product.img}`} alt={`Imagen de ${product.title}`} />
             <h2 className="text-lg font-semibold font-bold mb-2">{product.title} {product.brand} </h2>
             <p className="text-gray-700 mb-2 font-semibold">{product.description}</p>
             <p className="text-gray-700 mb-2">Stock: {product.stock}</p>
@@ -14,5 +15,7 @@ export const Item = ({ product }) => {
                 </button>
             </div>
         </div>
+        </Link>
     )
 }
+

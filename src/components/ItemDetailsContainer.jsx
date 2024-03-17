@@ -1,3 +1,5 @@
+
+
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { ItemDetail } from "./ItemDetail"
@@ -6,7 +8,7 @@ export const ItemDetailsContainer = () => {
     const { pid } = useParams()
 
     useEffect(() => {
-        fetch('../data/productos.json')
+        fetch('../Data/Productos.json')
             .then(response => response.json())
             .then(productos => {
                 const prod = productos.find(producto => producto.id == pid)
